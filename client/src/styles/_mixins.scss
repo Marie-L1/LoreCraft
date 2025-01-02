@@ -1,0 +1,45 @@
+@use './variables' as *;
+
+@mixin tablet {
+    @media (min-width: 768px){
+    @content;}
+}
+
+@mixin desktop {
+    @media (min-width: 1280px){
+    @content;}
+}
+
+
+// flex box
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin align-items-center{
+    display: flex;
+    align-items: center;
+}
+
+@mixin justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin justifyContent-alignItems-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin justifyContent-alignContent-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
